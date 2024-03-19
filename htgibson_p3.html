@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Page 3</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Custom Fonts, Icons, and Tooltips -->
+    <script src="https://kit.fontawesome.com/58f57ceec3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Page Header -->
+    <h1>Business Analytics Student Survey</h1>
+     <!-- Page 2 Form -->
+    <form>
+         <!-- Race Question Box-->
+        <p> What is your race?<br>(One or more categories may be selected)</p>
+        <input type="checkbox" id="American-Indian-or-Alaska-Native" name="core-class" value="American-Indian-or-Alaska-Native">
+        <label for="American-Indian-or-Alaska-Native">American Indian or Alaska Native</label><br>
+        
+        <input type="checkbox" id="Asian" name="core-class" value="Asian">
+        <label for="Asian">Asian</label><br>
+        
+        <input type="checkbox" id="Black-or-African-American" name="core-class" value="Black-or-African-American">
+        <label for="Black-or-African-American">Black or African American</label><br>
+        
+        <input type="checkbox" id="Native-Hawaiian-or-Other-Pacific-Islander" name="core-class" value="Native-Hawaiian-or-Other-Pacific-Islander">
+        <label for="Native-Hawaiian-or-Other-Pacific-Islander">Native Hawaiian or Other Pacific Islander</label><br>
+        
+        <input type="checkbox" id="White" name="core-class" value="White-management">
+        <label for="database-White">White</label><br>
+
+        <!-- Gender Question Box-->
+        <p>Which category best represents your gender?</p>
+        <select name="gender" id="gender" required>
+            <option value="choose-gender">-- gender selection --</option>
+            <option value="Man">Man</option>
+            <option value="Woman">Woman</option>
+            <option value="Trans-Man">Trans Man</option>
+            <option value="Trans-Female">Trans Female</option>
+            <option value="Genderqueer">Genderqueer</option>
+            <option value="Gender Non-conforming">Gende Non-conforming</option>
+            <option value="Non-binary">Non-binary</option>
+            <option value="Multi-gender">Multi-gender</option>
+            <option value="Decline-to-state">Decline to state</option>
+            <!-- Tooltip and icon addition -->
+            <span class="tooltip">
+                <i class="fa-solid fa-circle-info fontawesome"></i>
+                <span class="tooltip tooltiptext">Identifying your gender helps us enchance diversity and inclusivity in tech by addressing historical gender imbalances.</span>
+            </span>
+        </select>
+        <br>
+        <br>
+        <!-- Finish Survey Button -->
+         <button type = "button" onclick="window.location.href='htgibson_ty.html';">
+            Finish
+          </button>
+    </form>
+    <!-- Page indicator -->
+    <p> Page 4 of 5 </p>
+</body>
+</html>
