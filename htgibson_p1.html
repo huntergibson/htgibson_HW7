@@ -12,16 +12,17 @@
 <body>
     <!-- Page Header -->
     <h1>Business Analytics Student Survey</h1>
+    <br>
     <!-- Page 1 Form -->
     <form>
         <!-- Home Country Text Box -->
-        <p>My home country is</p>
+        <h3>What is your home country?</h3>
         <input type="text" id="country" name="country" autofocus>
         <!-- Home Town Text Box -->
-        <p>My home town is</p>
+        <h3>What is your home town?</h3>
         <input type="text" id="town" name="town" required>
         <!-- Home State Select Box -->
-        <p>My home state is</p>
+        <h3>What is your home state?</h3>
         <select name="state" id="state-select">
             <option value="">-- choose state/territory --</option>
             <option value="AL">AL</option>
@@ -84,7 +85,20 @@
             <option value="VI">VI - U.S. Virgin Islands</option>
         </select>
         <!-- Impression Select Box -->
-        <p>My impression of the BAIS major is</p>
+        <h3>What is your impression of the BAIS major?</h3>
+        <!-- Tooltip and icon addition -->
+        <p>(Question context)
+            <span class="tooltip">
+                <i class="fa-solid fa-circle-info fontawesome"></i>
+                <span class="tooltip tooltiptext">
+                    Very Positive, value = 5 <br>
+                    Somewhat Positive, value = 4 <br>
+                    Neutral, value = 3 <br>
+                    Somewhat Negative, value = 2 <br>
+                    Very Negative, value = 1 <br>
+                </span>
+            </span>
+        </p>
         <select name="impression" id="impression-select" required>
             <option value="">-- choose impression --</option>
             <option value="Very-Positive-5">5</option>
@@ -93,19 +107,8 @@
             <option value="Somewhat-Negative-2">2</option>
             <option value="Very-Negative-1">1</option>
         </select>
-          <!-- Tooltip and icon addition -->
-          <span class="tooltip">
-            <i class="fa-solid fa-circle-info fontawesome"></i>
-            <span class="tooltip tooltiptext">
-                Very Positive, value = 5 <br><br>
-                Somewhat Positive, value = 4 <br><br>
-                Neutral, value = 3 <br><br>
-                Somewhat Negative, value = 2 <br><br>
-                Very Negative, value = 1 <br><br>
-            </span>
-        </span>
-        <br>
-        <br>
+   
+        <br><br>
         <!-- Next Button -->
         <button type="button" onclick="window.location.href='htgibson_p2.html';">
             Next

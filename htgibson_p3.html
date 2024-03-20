@@ -15,7 +15,7 @@
      <!-- Page 2 Form -->
     <form>
          <!-- Race Question Box-->
-        <p> What is your race?<br>(One or more categories may be selected)</p>
+        <h3> What is your race? (One or more categories may be selected)</h3>
         <input type="checkbox" id="American-Indian-or-Alaska-Native" name="core-class" value="American-Indian-or-Alaska-Native">
         <label for="American-Indian-or-Alaska-Native">American Indian or Alaska Native</label><br>
         
@@ -32,7 +32,13 @@
         <label for="database-White">White</label><br>
 
         <!-- Gender Question Box-->
-        <p>Which category best represents your gender?</p>
+        <h3>Which category best represents your gender?</h3>
+        <p>(Question context)
+            <span class="tooltip">
+                <i class="fa-solid fa-circle-info fontawesome"></i>
+                <span class="tooltip tooltiptext">Identifying your gender helps us enhance diversity and inclusivity in tech by addressing historical gender imbalances.</span>
+            </span>
+        </p>
         <select name="gender" id="gender" required>
             <option value="choose-gender">-- gender selection --</option>
             <option value="Man">Man</option>
@@ -45,13 +51,8 @@
             <option value="Multi-gender">Multi-gender</option>
             <option value="Decline-to-state">Decline to state</option>
             <!-- Tooltip and icon addition -->
-            <span class="tooltip">
-                <i class="fa-solid fa-circle-info fontawesome"></i>
-                <span class="tooltip tooltiptext">Identifying your gender helps us enchance diversity and inclusivity in tech by addressing historical gender imbalances.</span>
-            </span>
         </select>
-        <br>
-        <br>
+        <br><br>
         <!-- Finish Survey Button -->
          <button type = "button" onclick="window.location.href='htgibson_ty.html';">
             Finish
