@@ -13,7 +13,7 @@
     <!-- Page Header -->
     <h1>Business Analytics Student Survey</h1>
      <!-- Page 2 Form -->
-    <form>
+    <form id="surveyForm" action="htgibson_ty.html">
          <!-- Race Question Box-->
         <h3> What is your race? (One or more categories may be selected)</h3>
         <input type="checkbox" id="American-Indian-or-Alaska-Native" name="core-class" value="American-Indian-or-Alaska-Native">
@@ -39,7 +39,7 @@
                 <span class="tooltip tooltiptext">Identifying your gender helps us enhance diversity and inclusivity in tech by addressing historical gender imbalances.</span>
             </span>
         </p>
-        <select name="gender" id="gender" required>
+        <select name="gender" id="gender" required aria-label="Home State">
             <option value="">--gender selection--</option>
             <option value="Man">Man</option>
             <option value="Woman">Woman</option>
@@ -54,7 +54,7 @@
         </select>
         <br><br>
         <!-- Finish Survey Button -->
-         <button type = "button" onclick="window.location.href='htgibson_ty.html';">
+         <button type = "submit">
             Finish
           </button>
     </form>
